@@ -1,8 +1,10 @@
 console.log("hello")
 
 const nameInput = document.getElementById("nome-input");
+const sobrenomeInput = document.getElementById("sobrenome-input");
 const button = document.querySelector('.send-button')
-const lista = document.querySelector('.lista');
+const lista = document.querySelector('.lista-nomes');
+
 
 
 
@@ -10,6 +12,6 @@ const lista = document.querySelector('.lista');
 
 button.addEventListener('click', (event) => {
     event.preventDefault()
-    console.log(nameInput.value)
+    lista.innerHTML += ` <li>${nameInput.value} ${sobrenomeInput.value}</li>`;
 })
 

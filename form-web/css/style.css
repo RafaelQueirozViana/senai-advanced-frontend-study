@@ -99,3 +99,22 @@ button {
 
     cursor: pointer;
 }
+
+.lista-nomes {
+    display: block;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 40px;
+
+}
+
+.lista-nomes h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.lista-nomes li {
+    font-size: 1.2rem;
+    list-style: square;
+    margin: 10px 0;
+}
